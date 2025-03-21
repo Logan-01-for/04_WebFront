@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>12_HTML연습문제</title>
+</head>
+<body>
+  <h1>회원 가입</h1>
+
+  <fieldset>
+    <legend>필수 입력 정보</legend>
+    ID <input type="text" placeholder="아이디 10글자 이내"><br>
+    비밀번호 <input type="text" placeholder="영문,숫자,특수문자 포함 8자 이상"><br>
+    비밀번호 확인 <input type="text"><br>
+    Email <input type="email">
+    <select name="email">
+      <option value="1" placeholder="직접입력"></option>
+      <option selected>직접입력</option>
+    </select>
+  </fieldset>
+
+  <fieldset>
+    <legend>추가 정보</legend>
+    프로필 사진  선택되 파일 없음 <br>
+    성별 :  <br>
+    생년월일 <br>
+    취미 <br>
+    자기소개 <br>
+    <textarea rows="10" cols="70" style="resize: none;"></textarea>
+
+  </fieldset>
+
+  <button type="button" id="btn">회원가입</button>
+  <button type="button" id="btn">다시입력</button>
+  <button type="button" id="btn">이전으로</button>
+
+</body>
+</html>
