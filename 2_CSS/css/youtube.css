@@ -1,0 +1,158 @@
+*{
+  box-sizing: border-box;
+
+  /* border: 1px solid black; */
+}
+
+body{
+  margin: 0;
+}
+
+main{
+  width: 1140px;
+  margin: auto;
+}
+
+header{
+  height: 200px;
+  display: flex;
+}
+header>section:nth-last-child()
+header > section:nth-last-of-type(2){
+  flex-basis: 80%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.account{
+  width: 120px;
+}
+
+.search-area{
+  width: 400px;
+}
+
+.search-area fieldset{
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 2px;
+
+display: flex;
+}
+#query{
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  border: 0;
+  outline: none;
+  /* outline : input 태그에 포커싱 되었을때
+  이를 표현하기 위한 바깥선
+   */
+   flex-basis: 92%;
+}
+#search-btn{
+  flex-basis: 8%;
+  cursor: pointer;
+  font-size: 20px;
+  color: black;
+  border: 0;
+  background-color: transparent;
+  /* transparent 배경색 투명 */
+}
+
+.account{
+  width: 50px;
+}
+
+
+/* 설명 */
+
+
+
+
+
+
+
+
+
+
+
+
+/* 설명란 */
+.content{
+  display: flex;
+}
+.content{
+  background-color: rgb(204, 202, 202);
+}
+
+.content{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+/* 모바일 : 767px 이하일 때 */
+@media all and (max-with: 767px) {
+  main{
+    width: 100vw;
+    /* vw : viewport width 의 약자
+      현재 뷰포트의 100%만큼 너비 차지
+    */
+  }
+
+  header{
+    display: none;
+  }
+
+  nav{
+    width: 100%;
+    border-bottom: none;
+    height: auto;
+  }
+
+  nav > ul {
+    flex-direction: column;
+  }
+
+  nav li{
+    flex-basis: auto;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .content{
+    flex-direction: column;
+  }
+
+  .content-2{
+    padding: 20px;
+  }
+
+  footer{
+    width: 100vw;
+  }
+  footer p,
+  footer > section > * {
+    font-size: 12px;
+  }
+}
+
+/* 태플릿 : 768px ~ 1023px 범위 */
+@media all and (min-width: 768px) and (max-with:1023px){
+
+}
+
+/* PC : 너비가 1024px 이상일 때 */
+@media (min-width: 1024px){
+
+}
