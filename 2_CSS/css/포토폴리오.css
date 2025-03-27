@@ -102,10 +102,6 @@ button {
   transition: color 0.3s; /* 색상 변화 효과 */
 }
 
-button:hover {
-  color: #ff0000; /* 호버 시 색상 변경 */
-}
-
 h3 {
   margin: 5px 0; /* 'wave' 텍스트와 버튼 간의 간격을 좁힘 */
   font-size: 16px; /* 텍스트 크기 */
@@ -155,9 +151,10 @@ button:hover{
 #subscribe,
 #like,
 #dislike,
-#shrae,
+#share,
 #option {
   font-size: 25px;  /* 각 버튼의 아이콘 크기 */
+  
 }
 .subscribe, .like, .dislike, share, .option {
   display: flex;
@@ -197,7 +194,7 @@ button:hover{
 /* footer 스타일 */
 footer {
   background-color: white; /* footer 배경색 */
-  padding: 1px; /* footer 안쪽 여백 */
+  padding: px; /* footer 안쪽 여백 */
   text-align: center; /* 가운데 정렬 */
 }
 
