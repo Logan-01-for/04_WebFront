@@ -105,6 +105,7 @@ test2.addEventListener("click", function(){
   this.innerText = count;
 });
 
+// 입력한 색상으로 배경색 변경하기
 const input3 = document.querySelector("#input3");
 const box3 = document.querySelector("#box3");
 
