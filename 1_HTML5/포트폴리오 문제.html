@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>포트폴리오 문제</title>
+  <style>
+    .tb {
+      border: 1px solid black;
+      border-color: black;
+    }
+    table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+  
+  
+    .tb thead{
+      background-color: orange;
+    }
+  
+    .tb tbody{
+      background-color: wheat;
+    }
+  
+    .tb tfoot{
+      background-color: orange;
+      
+    }
+  
+    .tb {
+      border: 3px solid white;
+    }
+    .tb th, .tb td{
+    border: 1px solid white;
+  }
+  </style>
+</head>
+<body>
+  <h1>포트폴리오 문제</h1>
+
+  설명 : ""이 붙은 문구 및 현재 작성된 이 문구는 화면 구현시 구현을 안해도 됩니다. 설명을 위해 작성한 구문입니다.
+  <hr>
+  <br>
+  * 하단의 화면처럼 공지하상 작성하기 폼을 작성하시오.(fom의 action 속성 값은 "insert.no" 부여, method 속성값은 "post" 부여)<br>
+  <br>
+  <fieldset>
+    <legend>공지사항 작성하기</legend>
+
+    제목 <input type="title" placeholder="제목을 입력하시오."><br>
+    내용 <textarea rows="5" cols="30"
+    style="resize: none;" placeholder="내용을 입력하시오."></textarea><br>
+
+    첨부파일 <input type="file">
+    <br>
+
+    <button type="button" id="btn">작성하기</button>
+  </fieldset>
+
+  <hr>
+
+  
+  <table class = "tb">
+    <thead>
+    <tr>
+      <th>번호</th>
+      <th colspan="2">제목</th>  
+      <th>작성자</th>
+      <th>작성일</th>
+      <th>조회수</th>
+    </tr>
+  </thead>
+  
+    <tbody>
+    <tr>
+      <td>9</td>
+      <td> 공지사항 제목 9</td>
+      <td><button type="button" id="btn">바로가기</td>
+      <td>user01</td>
+      <td>2021-03-29</td>
+      <td>34</td>
+    </tr>
+  
+    <tr>
+      <td>6</td>
+      <td> 공지사항 제목 6</td>
+      <td><button type="button" id="btn">바로가기</td>
+      <td>answ445</td>
+      <td>2021-03-12</td>
+      <td>67</td>
+    </tr>
+
+      <tr>
+        <td>3</td>
+        <td> 공지사항 제목 3</td>
+        <td><button type="button" id="btn">바로가기</td>
+        <td>tastg12</td>
+        <td>2021-03-01</td>
+        <td>98</td>
+      </tr>  
+    
+      <tr>
+        <td>2</td>
+        <td> 공지사항 제목 2</td>
+        <td><button type="button" id="btn">바로가기</td>
+        <td>palwe3</td>
+        <td>2021-01-02</td>
+        <td>85</td>
+      </tr>  
+    
+      <tr>
+        <td>1</td>
+        <td> 공지사항 제목 1</td>
+        <td><button type="button" id="btn">바로가기</td>
+        <td>xml23</td>
+        <td>2020-12-24</td>
+        <td>124</td>
+      </tr>
+    </tbody>
+
+      <tfoot>
+      <tr>
+        <th colspan="4">전체 공지사항 갯수</th>
+        <th colspan="2">5개</th>  
+      </tr>
+    </tfoot>
+
+  </table>
+</body>
+</html>
