@@ -2,7 +2,7 @@
 const boxList = document.querySelectorAll(".box");
 
 // 배경색 입력할 input 배열
-const inputList = document.querySelectorAll(".color-input");
+const input = document.querySelectorAll(".color-input");
 
 document.querySelector("#changeButton").addEventListener("click", function() {
 

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>시험</title>
+  <link rel="stylesheet" href="../css/시험.css">
+</head>
+<body>
+  
+  <div class="container"></div>
+  
+  너비 : <input type="number"> px
+  높이 : <input type="number"> px
+  <br><br>
+  <tr>
+  글자크기 : <input type="number"> px
+
+  굵기 : <label for="normal">보통</label>
+  <input type="radio" name="fw" value="normal">
+  
+  <label for="bold">굵게</label>
+  <input type="radio" name="fw" value="bold">  
+</tr>
+
+  <br><br>
+  글자색 : <input type="text">
+  배경색 : <input type="text" class="color-input">
+  <br><br>
+  
+  <th>가로정렬 : </tr> 
+  <label for="left">왼쪽</label> 
+  <input type="radio" name="align-row" id="left">
+  
+  <label for="middle">가운데</label> 
+  <input type="radio" name="align-row" id="middle">
+  
+  <label for="right">오른쪽</label> 
+  <input type="radio" name="align-row" id="right">
+
+  <br><br>
+  <th>세로정렬 : </th>
+  <label for="up">위</label> 
+  <input type="radio" name="height" value="up">
+  
+  <label for="middle">가운데</label> 
+  <input type="radio" name="height" id="middle">
+  
+  <label for="down">아래</label> 
+  <input type="radio" name="height" id="down">
+
+  <br><br>
+
+  <th>출력 문자열 : </th>
+  <input type="text" id="content">
+  <br><br>
+
+  
+  <button id="apply-btn">적용하기</button>
+
+  <div id="box"></div>
+
+
+
+
+  <script src="../js/시험.js"></script>
+</body>
+</html>
