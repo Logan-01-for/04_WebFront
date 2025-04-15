@@ -7,61 +7,60 @@
   <link rel="stylesheet" href="../css/시험.css">
 </head>
 <body>
+
+  <h2>박스 스타일 설정</h2>
+
+  <table>
+    <tr>
+      <th>너비</th>
+      <td><input type="number" id="box-width"> px</td>
+      <th>높이</th>
+      <td><input type="number" id="box-height"> px</td>
+    </tr>
+    <tr>
+      <th>글자 크기</th>
+      <td><input type="number" id="fs"> px</td>
+      <th>굵기</th>
+      <td>
+        <label><input type="radio" name="fw" value="normal"> 보통</label>
+        <label><input type="radio" name="fw" value="bold"> 굵게</label>
+      </td>
+    </tr>
+    <tr>
+      <th>글자 색</th>
+      <td><input type="text" id="box-font-color"></td>
+      <th>배경 색</th>
+      <td><input type="text" id="box-bg-color"></td>
+    </tr>
+    <tr>
+      <th>가로 정렬</th>
+      <td colspan="3">
+        <label><input type="radio" name="align-row" value="flex-start"> 왼쪽</label>
+        <label><input type="radio" name="align-row" value="center"> 가운데</label>
+        <label><input type="radio" name="align-row" value="flex-end"> 오른쪽</label>
+      </td>
+    </tr>
+    <tr>
+      <th>세로 정렬</th>
+      <td colspan="3">
+        <label><input type="radio" name="align-col" value="flex-start"> 위</label>
+        <label><input type="radio" name="align-col" value="center"> 가운데</label>
+        <label><input type="radio" name="align-col" value="flex-end"> 아래</label>
+      </td>
+    </tr>
+    <tr>
+      <th>출력 문자열</th>
+      <td colspan="3"><input type="text" id="content" style="width: 100%;"></td>
+    </tr>
+  </table>
+
+
+  <div class="center-wrapper">
+    <button id="apply-btn">적용하기</button>
   
-  <div class="container"></div>
+    <div id="box"></div>
+  </div>
   
-  너비 : <input type="number"> px
-  높이 : <input type="number"> px
-  <br><br>
-  <tr>
-  글자크기 : <input type="number"> px
-
-  굵기 : <label for="normal">보통</label>
-  <input type="radio" name="fw" value="normal">
-  
-  <label for="bold">굵게</label>
-  <input type="radio" name="fw" value="bold">  
-</tr>
-
-  <br><br>
-  글자색 : <input type="text">
-  배경색 : <input type="text" class="color-input">
-  <br><br>
-  
-  <th>가로정렬 : </tr> 
-  <label for="left">왼쪽</label> 
-  <input type="radio" name="align-row" id="left">
-  
-  <label for="middle">가운데</label> 
-  <input type="radio" name="align-row" id="middle">
-  
-  <label for="right">오른쪽</label> 
-  <input type="radio" name="align-row" id="right">
-
-  <br><br>
-  <th>세로정렬 : </th>
-  <label for="up">위</label> 
-  <input type="radio" name="height" value="up">
-  
-  <label for="middle">가운데</label> 
-  <input type="radio" name="height" id="middle">
-  
-  <label for="down">아래</label> 
-  <input type="radio" name="height" id="down">
-
-  <br><br>
-
-  <th>출력 문자열 : </th>
-  <input type="text" id="content">
-  <br><br>
-
-  
-  <button id="apply-btn">적용하기</button>
-
-  <div id="box"></div>
-
-
-
 
   <script src="../js/시험.js"></script>
 </body>

@@ -1,12 +1,30 @@
-
-
-tr{
+/* 테이블 행 높이 통일 */
+tr {
   height: 50px;
 }
 
-#box{
+/* 결과 박스 스타일 */
+#box {
   border: 3px solid black;
   width: 10px;
   height: 10px;
   display: flex;
+
+  /* 기본 정렬 */
+  justify-content: center;
+  align-items: center;
+
+  /* 부드러운 스타일 변화 */
+  transition: all 0.3s ease;
+
+  /* 기본 배경/글씨색 설정 (JS에서 덮어씀) */
+  background-color: #eee;
+  color: #000;
+
+  /* 예쁘게 보이기 위한 기본값 */
+  font-size: 16px;
+  margin-top: 20px;
+}
+.center-wrapper {
+  text-align: center;
 }
